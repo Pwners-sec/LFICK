@@ -19,8 +19,6 @@ def ArgsControl(argv=None):
         # options = parser.add_argument('-u', '--url', dest='URL', type=str,
                             # help='Target URL (Example: http://127.0.0.1/home/dashboard)')
 
-        # args = options.parse_args()
-
     except (argparse.ArgumentError, TypeError) as ex:
         parser.error(ex)
 
