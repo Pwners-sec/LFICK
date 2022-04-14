@@ -19,12 +19,16 @@ def ArgsControl(argv=None):
         # options = parser.add_argument('-u', '--url', dest='URL', type=str,
                             # help='Target URL (Example: http://127.0.0.1/home/dashboard)')
 
-        # args = options.parse_args()
+        parser.print_help()
 
     except (argparse.ArgumentError, TypeError) as ex:
         parser.error(ex)
 
     return argv
 
-def HelpPanel():
-    parser.print_help()
+# def HelpPanel(parser):
+    # Lanza el panel de ayuda
+    # if not parser:
+        # parser = ArgsControl.parser
+
+    # parser.print_help()
