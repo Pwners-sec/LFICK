@@ -7,13 +7,14 @@
 # Ejemplo:
 # print('%s%s%s%s' % (ACSII.bgCyan, ACSII.fgBlack, header_usage, ACSII.reset))
 
-header_usage = """
-Usage:\tlfick [options] -u <url>\r
-      You can enter a Asterisk (*) where you want to apply the inclusion attack.
-      Example: -u http://127.0.0.1/home/contact*
-"""
+header_usage = """\nUsage:\tlfick [options] -u <url>\r\n"""
 
-exception_usage = """%s\n\nType lfick -h for more information""" % header_usage
+# No se si vamos a usar asterisco..
+# You can enter a Asterisk (*) where you want to apply the inclusion attack.
+# Example: -u http://127.0.0.1/home/contact*
+
+
+exception_usage = """%s\nType lfick -h for more information\n""" % header_usage
 
 os_usage = """
 (!) Operating system recognition has failed. Please specify this
@@ -26,12 +27,15 @@ os_usage = """
 options_usage = """%s\n
 Options:
     -h, --help                  Shows this help
-    -v                          Verbosity level (use -vv or more for increment the verbose)
-    -o, --output <file>         Send the output to file
+    -v, -vv, -vvv               Verbosity level
     -c, --colors                Output with colors
+    -o, --output <file>         Send the output to file
 
     Target:
         -u <url>                Target URL (Example: -u http://127.0.0.1/home/dashboard?id=1)
+
+    Wordlists:
+        -w, --wordlist          If you wish to use one of your wordlists
 
     Request:
         -d, --data <data>       HTTP POST data (Example: "id=1")
@@ -43,6 +47,7 @@ Options:
         -O, --os win, windows   Specify the operating system to penetrate,
                  lin, linux     by default the program recognizes the OS,
                  mac            if it does not, this field will be required.
+
 
 """ % header_usage
 
