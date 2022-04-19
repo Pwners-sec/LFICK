@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
 import sys
-# from console.options import Parser
+from console.parser import CliParser
 
 # Funcion principal del programa
 
 def main():
 
-    Parser(sys.argv).ArgsControl()
-    print('todavia no se escribio la funcion')
+    CliParser(sys.argv).ArgsControl()
 
 main()

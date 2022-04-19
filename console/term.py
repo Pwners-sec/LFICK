@@ -24,7 +24,7 @@ os_usage = """
                            mac
 """
 
-options_usage = """%s\n
+options_usage = """%s
 Options:
     -h, --help                  Shows this help
     -v, -vv, -vvv               Verbosity level
@@ -47,7 +47,6 @@ Options:
         -O, --os win, windows   Specify the operating system to penetrate,
                  lin, linux     by default the program recognizes the OS,
                  mac            if it does not, this field will be required.
-
 
 """ % header_usage
 

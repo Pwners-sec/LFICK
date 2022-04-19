@@ -3,8 +3,5 @@
 class LFIexception(Exception):
     pass
 
-class LFIsyntaxError(LFIexception):
-    pass
-
 class LFIexceptBadOptions(LFIexception):
     pass
